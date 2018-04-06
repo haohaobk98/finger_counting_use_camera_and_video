@@ -1,0 +1,32 @@
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\bin\Debug\cvextern.dll
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\bin\Debug\HandGestureRecognition.exe.config
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\bin\Debug\HandGestureRecognition.exe
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\bin\Debug\HandGestureRecognition.pdb
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\bin\Debug\Emgu.CV.dll
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\bin\Debug\Emgu.CV.UI.dll
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\bin\Debug\Emgu.Util.dll
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\bin\Debug\HandGestureRecognition.SkinDetector.dll
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\bin\Debug\HandGestureRecognition.SkinDetector.pdb
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\obj\x86\Debug\use video file to count finger.csprojResolveAssemblyReference.cache
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Form1.resources
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Properties.Resources.resources
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\obj\x86\Debug\use video file to count finger.csproj.GenerateResource.Cache
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\obj\x86\Debug\use video file to count finger.csproj.CoreCompileInputs.cache
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.exe
+C:\Users\Ki Thuat 88\Desktop\Hand_Count\finger_count_video\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.pdb
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\bin\Debug\cvextern.dll
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\bin\Debug\HandGestureRecognition.exe.config
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\bin\Debug\HandGestureRecognition.exe
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\bin\Debug\HandGestureRecognition.pdb
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\bin\Debug\Emgu.CV.dll
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\bin\Debug\Emgu.CV.UI.dll
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\bin\Debug\Emgu.Util.dll
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\bin\Debug\HandGestureRecognition.SkinDetector.dll
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\bin\Debug\HandGestureRecognition.SkinDetector.pdb
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\obj\x86\Debug\use video file to count finger.csprojResolveAssemblyReference.cache
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Form1.resources
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Properties.Resources.resources
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\obj\x86\Debug\use video file to count finger.csproj.GenerateResource.Cache
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\obj\x86\Debug\use video file to count finger.csproj.CoreCompileInputs.cache
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.exe
+C:\Users\Ki Thuat 88\Desktop\hand_count_use_VideoFile\finger_count_video\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.pdb
