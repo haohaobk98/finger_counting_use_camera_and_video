@@ -40,5 +40,31 @@ namespace HandGestureRecognition
             == DialogResult.Yes)
                 Application.Exit();
         }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+           == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+           == DialogResult.Yes)
+                Application.Exit();
+        }
+
+        private void cameraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 a1 = new Form1();
+            a1.Show();
+        }
+
+        private void videoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            video a2 = new video();
+            a2.Show();
+        }
     }
 }
