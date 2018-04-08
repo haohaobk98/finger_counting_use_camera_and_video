@@ -156,7 +156,7 @@ namespace HandGestureRecognition
             #region defects drawing
             for (int i = 0; i < defects.Total; i++)
             {
-                LoadListView();
+                //LoadListView();
                 // khởi tạo 3 điểm startpoint , depthpoint và endpoint của convexity defect
                 // hàm PointF(single,single) để khởi tạo 1 điểm với các  tọa độ cụ thể 
                 PointF startPoint = new PointF((float)defectArray[i].StartPoint.X,
@@ -205,10 +205,10 @@ namespace HandGestureRecognition
             MCvFont font = new MCvFont(Emgu.CV.CvEnum.FONT.CV_FONT_HERSHEY_DUPLEX, 5d, 5d);
             currentFrame.Draw(fingerNum.ToString(), ref font, new Point(50, 150), new Bgr(Color.White));
             
-            void LoadListView()
-            {
-                Lsv.Items.Add(fingerNum.ToString());
-            }
+           // void LoadListView()
+            //{
+            //    Lsv.Items.Add(fingerNum.ToString());
+            //}
 
         }
 

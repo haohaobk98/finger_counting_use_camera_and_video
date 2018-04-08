@@ -29,13 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("number of hand");
             this.imageBoxFrameGrabber = new Emgu.CV.UI.ImageBox();
             this.splitContainerFrames = new System.Windows.Forms.SplitContainer();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.Lsv = new System.Windows.Forms.ListView();
             this.imageBoxSkin = new Emgu.CV.UI.ImageBox();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
             this.splitContainerFrames.Panel1.SuspendLayout();
@@ -69,7 +67,6 @@
             // splitContainerFrames.Panel2
             // 
             this.splitContainerFrames.Panel2.Controls.Add(this.dateTimePicker1);
-            this.splitContainerFrames.Panel2.Controls.Add(this.Lsv);
             this.splitContainerFrames.Panel2.Controls.Add(this.imageBoxSkin);
             this.splitContainerFrames.Size = new System.Drawing.Size(988, 385);
             this.splitContainerFrames.SplitterDistance = 465;
@@ -98,17 +95,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 4;
-            // 
-            // Lsv
-            // 
-            this.Lsv.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.Lsv.Location = new System.Drawing.Point(416, 3);
-            this.Lsv.Name = "Lsv";
-            this.Lsv.Size = new System.Drawing.Size(100, 165);
-            this.Lsv.TabIndex = 3;
-            this.Lsv.UseCompatibleStateImageBehavior = false;
-            this.Lsv.View = System.Windows.Forms.View.SmallIcon;
             // 
             // imageBoxSkin
             // 
@@ -147,7 +133,6 @@
         private Emgu.CV.UI.ImageBox imageBoxFrameGrabber;
         private System.Windows.Forms.SplitContainer splitContainerFrames;
         private Emgu.CV.UI.ImageBox imageBoxSkin;
-        private System.Windows.Forms.ListView Lsv;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
