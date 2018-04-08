@@ -192,6 +192,9 @@
     <Content Include="cvextern.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\video.png" />
+    <None Include="Resources\camera.jpg" />
+    <None Include="Resources\ass.ico.jpg" />
     <None Include="Resources\bkhn.jpg" />
   </ItemGroup>
   <ItemGroup>

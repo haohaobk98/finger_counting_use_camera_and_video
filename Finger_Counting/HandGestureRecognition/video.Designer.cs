@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("number of hand");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("number of hand");
             this.imageBoxFrameGrabber = new Emgu.CV.UI.ImageBox();
             this.splitContainerFrames = new System.Windows.Forms.SplitContainer();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Lsv = new System.Windows.Forms.ListView();
             this.imageBoxSkin = new Emgu.CV.UI.ImageBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
             this.splitContainerFrames.Panel1.SuspendLayout();
             this.splitContainerFrames.Panel2.SuspendLayout();
@@ -92,13 +92,20 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(319, 365);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 4;
+            // 
             // Lsv
             // 
             this.Lsv.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
-            this.Lsv.Location = new System.Drawing.Point(425, 3);
+            listViewItem1});
+            this.Lsv.Location = new System.Drawing.Point(416, 3);
             this.Lsv.Name = "Lsv";
-            this.Lsv.Size = new System.Drawing.Size(91, 165);
+            this.Lsv.Size = new System.Drawing.Size(100, 165);
             this.Lsv.TabIndex = 3;
             this.Lsv.UseCompatibleStateImageBehavior = false;
             this.Lsv.View = System.Windows.Forms.View.SmallIcon;
@@ -113,21 +120,14 @@
             this.imageBoxSkin.TabIndex = 2;
             this.imageBoxSkin.TabStop = false;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(319, 365);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 4;
-            // 
-            // Form1
+            // video
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 385);
             this.Controls.Add(this.splitContainerFrames);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "video";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).EndInit();

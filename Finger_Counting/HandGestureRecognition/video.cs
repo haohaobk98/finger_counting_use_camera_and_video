@@ -20,7 +20,7 @@ namespace HandGestureRecognition
         Image<Bgr, Byte> currentFrame;        // biến currentFrame để chỉ khung hiện tại
         Image<Bgr, Byte> currentFrameCopy;    // biến currentFramecompy để chỉ khung tương thích trên frame  phản chiếu
 
-        Capture grabber;                   // biến grabber để có được hình ảnh từ video file or camera
+        Capture grabber;                   // biến grabber để có được hình ảnh từ video file
         AdaptiveSkinDetector detector;
 
         // một vài biến để xác định một số thuộc tính của video file
@@ -47,19 +47,19 @@ namespace HandGestureRecognition
             InitializeComponent();
             grabber = new Emgu.CV.Capture(@".\..\..\..\hao.mpg");  // có được từ video file nhờ sử dụng biến grabber            
             grabber.QueryFrame(); // nhận khung hình từ video file
-            frameWidth = grabber.Width;    // thiet lap kich thuoc cua khung lay tu kich thuoc cua video file da co
+            frameWidth = grabber.Width;    // thiet lap kich thuoc cua khung lay tu kich thuoc cua video file đã có
             frameHeight = grabber.Height;
             detector = new AdaptiveSkinDetector(1, AdaptiveSkinDetector.MorphingMethod.NONE); // nhận diện skin
-            /* xác định ngưỡng trên và ngưỡng dưới của hsv and YCrCB color space 
-             có thể điều chỉnh để phù hơp với video file  */
+            // xác định ngưỡng trên và ngưỡng dưới của hsv and YCrCB color space 
+            // có thể điều chỉnh để phù hơp với video file  
             hsv_min = new Hsv(0, 45, 0);
             hsv_max = new Hsv(20, 255, 255);
             YCrCb_min = new Ycc(0, 131, 80);
             YCrCb_max = new Ycc(255, 185, 135);
             box = new MCvBox2D();
-            
 
-            // gắn thêm FrameGrabber vào Eventhandler để truy cập vào hsv frame and YCrCB frame
+
+            // gắn sự kiện Eventhandler để truy cập vào hsv frame and YCrCB frame
             Application.Idle += new EventHandler(FrameGrabber);
            
         }
@@ -71,7 +71,7 @@ namespace HandGestureRecognition
             if (currentFrame != null)
             {
                 currentFrameCopy = currentFrame.Copy(); // có được khung ánh xạ của bàn tay
-                // sử dụng YcrCbskinDetector để nhận diện skin
+                // sử dụng YcrCbskinDetector để nhận diện da
                 skinDetector = new YCrCbSkinDetector();
 
                 Image<Gray, Byte> skin = skinDetector.DetectSkin(currentFrameCopy, YCrCb_min, YCrCb_max);
@@ -146,8 +146,8 @@ namespace HandGestureRecognition
                 }
             }
         }
-        // ve va dem so luong ngon tay
-     //   int fingerNum = 0;
+        // vẽ và đếm số lượng ngón tay
+        
         private void DrawAndComputeFingersNum()
         {
             
@@ -221,9 +221,9 @@ namespace HandGestureRecognition
         // chức năng thoát
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+            if (MessageBox.Show("Do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
                == DialogResult.Yes)
-                Application.Exit();
+                Application.ExitThread();
         }
     }
 }

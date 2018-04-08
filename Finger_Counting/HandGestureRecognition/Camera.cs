@@ -44,7 +44,6 @@ namespace HandGestureRecognition
             Run();
             detector = new AdaptiveSkinDetector(1, AdaptiveSkinDetector.MorphingMethod.NONE);
            // xác định ngưỡng trên và ngưỡng dưới của hsv and YCrCB color space 
-           // có thể điều chỉnh để phù hơp với video file  
             hsv_min = new Hsv(0, 45, 0);
             hsv_max = new Hsv(20, 255, 255);
             YCrCb_min = new Ycc(0, 131, 80);
@@ -84,7 +83,7 @@ namespace HandGestureRecognition
             {
                 currentFrameCopy = currentFrame.Copy();
 
-                // su dung YcrCbskinDetector de nhan dien skin
+                // su dung YcrCbskinDetector de nhan dien da
                 skinDetector = new YCrCbSkinDetector();
 
                 Image<Gray, Byte> skin = skinDetector.DetectSkin(currentFrameCopy, YCrCb_min, YCrCb_max);
@@ -97,10 +96,10 @@ namespace HandGestureRecognition
                 imageBoxFrameGrabber.Image = currentFrame;
             }
         }
-        // class MemStorage() de tao bo nho cho openCV
+        // class MemStorage() để tạo bộ nhớ openCV
         MemStorage storage = new MemStorage();
 
-        // chiet xuat ra duong vien bao boc ban tay
+        // chiết xuất ra đường viền bao bọc bàn tay
         private void ExtractContourAndHull(Image<Gray, byte> skin)
         {
             {
@@ -160,8 +159,8 @@ namespace HandGestureRecognition
                 }
             }
         }
-        // ve va dem so luong ngon tay
-        //   int fingerNum = 0;
+        // vẽ và đếm số lượng ngón tay
+        
         private void DrawAndComputeFingersNum()
         {
 
@@ -240,7 +239,7 @@ namespace HandGestureRecognition
         // chức năng Exit
         private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+            if (MessageBox.Show("Do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
               == DialogResult.Yes)
                 Application.Exit();
         }

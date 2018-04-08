@@ -63,9 +63,39 @@ namespace HandGestureRecognition.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ass_ico {
+            get {
+                object obj = ResourceManager.GetObject("ass.ico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bkhn {
             get {
                 object obj = ResourceManager.GetObject("bkhn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap camera {
+            get {
+                object obj = ResourceManager.GetObject("camera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap video {
+            get {
+                object obj = ResourceManager.GetObject("video", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

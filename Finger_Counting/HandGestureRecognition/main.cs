@@ -16,6 +16,7 @@ namespace HandGestureRecognition
             InitializeComponent();
         }
 
+        // click button 1 để chạy chương trình sử dụng video
         private void button1_Click(object sender, EventArgs e)
         {
             video a = new video();
@@ -23,6 +24,7 @@ namespace HandGestureRecognition
             
         }
 
+        // click button 2 để chạy chương trình sử dụng camera
         private void button2_Click(object sender, EventArgs e)
         {
             Form1 ab = new Form1();
@@ -34,7 +36,7 @@ namespace HandGestureRecognition
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+            if (MessageBox.Show("Do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
             == DialogResult.Yes)
                 Application.Exit();
         }
