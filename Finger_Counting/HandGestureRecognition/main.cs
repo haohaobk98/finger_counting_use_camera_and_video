@@ -66,5 +66,7 @@ namespace HandGestureRecognition
             video a2 = new video();
             a2.Show();
         }
+
+        
     }
 }
