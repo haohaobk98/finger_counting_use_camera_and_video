@@ -34,6 +34,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxSkin)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -48,6 +49,7 @@
             this.imageBoxFrameGrabber.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageBoxFrameGrabber.TabIndex = 2;
             this.imageBoxFrameGrabber.TabStop = false;
+            this.toolTip1.SetToolTip(this.imageBoxFrameGrabber, "Click right mouse to use some functions");
             // 
             // imageBoxSkin
             // 
@@ -57,6 +59,7 @@
             this.imageBoxSkin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageBoxSkin.TabIndex = 3;
             this.imageBoxSkin.TabStop = false;
+            this.toolTip1.SetToolTip(this.imageBoxSkin, "Click right mouse to use some functions");
             // 
             // menuStrip1
             // 
@@ -77,7 +80,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(633, 359);
+            this.dateTimePicker1.Location = new System.Drawing.Point(791, 359);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 5;
@@ -110,5 +113,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

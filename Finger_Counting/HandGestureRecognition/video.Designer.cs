@@ -35,6 +35,7 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.imageBoxSkin = new Emgu.CV.UI.ImageBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
             this.splitContainerFrames.Panel1.SuspendLayout();
             this.splitContainerFrames.Panel2.SuspendLayout();
@@ -52,6 +53,7 @@
             this.imageBoxFrameGrabber.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageBoxFrameGrabber.TabIndex = 2;
             this.imageBoxFrameGrabber.TabStop = false;
+            this.toolTip1.SetToolTip(this.imageBoxFrameGrabber, "Click right mouse to do some functions");
             // 
             // splitContainerFrames
             // 
@@ -105,6 +107,7 @@
             this.imageBoxSkin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageBoxSkin.TabIndex = 2;
             this.imageBoxSkin.TabStop = false;
+            this.toolTip1.SetToolTip(this.imageBoxSkin, "Click right mouse to do some functions");
             // 
             // video
             // 
@@ -136,6 +139,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

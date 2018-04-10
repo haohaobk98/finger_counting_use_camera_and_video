@@ -55,6 +55,8 @@ namespace HandGestureRecognition
             Application.Idle += new EventHandler(FrameGrabber);
 
         }
+
+        // ham run() để bắt camera
         private void Run()
         {
             try
@@ -75,7 +77,7 @@ namespace HandGestureRecognition
             imageBoxFrameGrabber.Image = grabber.QuerySmallFrame();
         }
 
-        // truy cap vào khung tham chieu tu camera
+        // truy cập vào khung tham chiếu từ camera
         void FrameGrabber(object sender, EventArgs e)
         {
             currentFrame = grabber.QueryFrame();
@@ -83,7 +85,7 @@ namespace HandGestureRecognition
             {
                 currentFrameCopy = currentFrame.Copy();
 
-                // su dung YcrCbskinDetector de nhan dien da
+                // sử dụng YcrCbskinDetector để nhận diện da
                 skinDetector = new YCrCbSkinDetector();
 
                 Image<Gray, Byte> skin = skinDetector.DetectSkin(currentFrameCopy, YCrCb_min, YCrCb_max);
@@ -127,15 +129,10 @@ namespace HandGestureRecognition
                     Contour<Point> currentContour = biggestContour.ApproxPoly(biggestContour.Perimeter * 0.0025, storage);
                     // dung màu xanh là cây để biểu diễn đường viền bao tay
                     currentFrame.Draw(currentContour, new Bgr(Color.LimeGreen), 2);
-
                     biggestContour = currentContour;
-
-
                     hull = biggestContour.GetConvexHull(Emgu.CV.CvEnum.ORIENTATION.CV_CLOCKWISE);
                     box = biggestContour.GetMinAreaRect();
                     PointF[] points = box.GetVertices();
-
-
                     Point[] ps = new Point[points.Length];
                     for (int i = 0; i < points.Length; i++)
                         ps[i] = new Point((int)points[i].X, (int)points[i].Y);
@@ -221,20 +218,11 @@ namespace HandGestureRecognition
          
         }
 
-        private void imageBoxFrameGrabber_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void splitContainerFrames_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         // chức năng Exit
         private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -242,6 +230,7 @@ namespace HandGestureRecognition
             if (MessageBox.Show("Do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
               == DialogResult.Yes)
                 Application.Exit();
+
         }
     }
 }

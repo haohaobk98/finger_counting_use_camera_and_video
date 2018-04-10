@@ -53,6 +53,7 @@ namespace HandGestureRecognition
             if (MessageBox.Show("Do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
            == DialogResult.Yes)
                 Application.Exit();
+           
         }
 
         private void cameraToolStripMenuItem_Click(object sender, EventArgs e)
