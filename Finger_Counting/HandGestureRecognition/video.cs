@@ -47,9 +47,9 @@ namespace HandGestureRecognition
             InitializeComponent();
             grabber = new Emgu.CV.Capture(@".\..\..\..\hao.mpg");  // có được từ video file nhờ sử dụng biến grabber            
             grabber.QueryFrame(); // nhận khung hình từ video file
-            frameWidth = grabber.Width;    // thiet lap kich thuoc cua khung lay tu kich thuoc cua video file đã có
+            frameWidth = grabber.Width;    // thiết lập kích thước khung từ kích thước video file đã có
             frameHeight = grabber.Height;
-            detector = new AdaptiveSkinDetector(1, AdaptiveSkinDetector.MorphingMethod.NONE); // nhận diện skin
+            detector = new AdaptiveSkinDetector(1, AdaptiveSkinDetector.MorphingMethod.NONE); //class nhận diện da
             // xác định ngưỡng trên và ngưỡng dưới của hsv and YCrCB color space 
             // có thể điều chỉnh để phù hơp với video file  
             hsv_min = new Hsv(0, 45, 0);
@@ -97,6 +97,7 @@ namespace HandGestureRecognition
                 // class contour() đê taọ đường viền, sử dụng bộ nhớ storage
                 Double Result1 = 0;
                 Double Result2 = 0;
+                // xác định đường viền bao bọc bàn tay
                 while (contours != null)
                 {
                     Result1 = contours.Area;
@@ -203,7 +204,7 @@ namespace HandGestureRecognition
 
             // hàm MCvFont(FONT, Double, Double) để tạo phông chữ (hiể thị số lượng ngón tay), quy mô theo chiều ngang và dọc
             MCvFont font = new MCvFont(Emgu.CV.CvEnum.FONT.CV_FONT_HERSHEY_DUPLEX, 5d, 5d);
-            currentFrame.Draw(fingerNum.ToString(), ref font, new Point(50, 150), new Bgr(Color.White));
+            currentFrame.Draw(fingerNum.ToString(), ref font, new Point(50, 150), new Bgr(Color.Black));
             
            // void LoadListView()
             //{

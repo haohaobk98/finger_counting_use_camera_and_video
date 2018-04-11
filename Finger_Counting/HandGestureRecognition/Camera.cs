@@ -51,7 +51,7 @@ namespace HandGestureRecognition
             box = new MCvBox2D();
 
 
-            // gắn sự kiện Eventhandler de truy cap vào hsv frame and YCrCB frame
+            // gắn sự kiện Eventhandler để truy cập vào hsv frame and YCrCB frame
             Application.Idle += new EventHandler(FrameGrabber);
 
         }
@@ -112,6 +112,7 @@ namespace HandGestureRecognition
                 // class contour() đê taọ đường viền ,sử dụng bộ nhớ storage
                 Double Result1 = 0;
                 Double Result2 = 0;
+                // xác định đường viền bao bọc bàn tay
                 while (contours != null)
                 {
                     Result1 = contours.Area;
@@ -213,7 +214,7 @@ namespace HandGestureRecognition
 
             // hàm MCvFont(FONT, Double, Double) để tạo phông chữ (hiể thị số lượng ngón tay), quy mô theo chiều ngang và dọc
             MCvFont font = new MCvFont(Emgu.CV.CvEnum.FONT.CV_FONT_HERSHEY_DUPLEX, 5d, 5d);
-            currentFrame.Draw(fingerNum.ToString(), ref font, new Point(50, 150), new Bgr(Color.White));
+            currentFrame.Draw(fingerNum.ToString(), ref font, new Point(50, 150), new Bgr(Color.Black));
 
          
         }
