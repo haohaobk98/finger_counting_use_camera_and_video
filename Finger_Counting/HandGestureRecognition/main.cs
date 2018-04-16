@@ -16,23 +16,37 @@ namespace HandGestureRecognition
             InitializeComponent();
         }
 
-        // click button 1 để chạy chương trình sử dụng video
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// click vào hình ảnh video trên giao diện để chạy chương trình sử dụng video
+        /// hàm để khởi tạo chương trình chạy bằng video
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Video_Click(object sender, EventArgs e)
         {
-            video a = new video();
-            a.Show();
+            video VideoButton = new video();
+            VideoButton.Show();
             
         }
 
-        // click button 2 để chạy chương trình sử dụng camera
-        private void button2_Click(object sender, EventArgs e)
+        /// <summary>
+        ///  click vào hình ảnh video trên giao diện để chạy chương trình sử dụng camera
+        ///  hàm để khởi tạo chương trình chạy bằng camera
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Camera_Click(object sender, EventArgs e)
         {
-            Form1 ab = new Form1();
-            ab.Show();
+            Form1 CameraButton = new Form1();
+            CameraButton.Show();
             
         }
 
-        // chức năng Exit
+        /// <summary>
+        /// chức năng Exit trên thanh công cụ và khi click chuột phải
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -55,17 +69,21 @@ namespace HandGestureRecognition
                 Application.Exit();
            
         }
-
+        /// <summary>
+        /// Hiển thị các chức năng trên thanh công cụ bao gồm camera và video
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cameraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 a1 = new Form1();
-            a1.Show();
+            Form1 CameraToolStrip = new Form1();
+            CameraToolStrip.Show();
         }
 
         private void videoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            video a2 = new video();
-            a2.Show();
+            video VideoToolStrip = new video();
+            VideoToolStrip.Show();
         }
 
         

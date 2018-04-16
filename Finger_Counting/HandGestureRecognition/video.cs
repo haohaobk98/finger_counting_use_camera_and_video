@@ -64,7 +64,11 @@ namespace HandGestureRecognition
            
         }
 
-        // truy cập vào khung tham chiếu từ video file
+        /// <summary>
+        /// hàm truy cập vào khung tham chiếu từ video file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void FrameGrabber(object sender, EventArgs e)
         {
             currentFrame = grabber.QueryFrame();
@@ -86,7 +90,10 @@ namespace HandGestureRecognition
         }
         // class MemStorage() để tạo bộ nhớ mở cho openCV
         MemStorage storage = new MemStorage();
-        // chiết xuất ra đường viền bao bọc bàn tay
+        /// <summary>
+        /// hàm chiết xuất ra đường viền bao bọc bàn tay
+        /// </summary>
+        /// <param name="skin"></param>
         private void ExtractContourAndHull(Image<Gray, byte> skin)
         {            
             {
@@ -147,8 +154,10 @@ namespace HandGestureRecognition
                 }
             }
         }
-        // vẽ và đếm số lượng ngón tay
-        
+        /// <summary>
+        /// hàm vẽ và đếm số lượng ngón tay
+        /// </summary>
+
         private void DrawAndComputeFingersNum()
         {
             
@@ -219,7 +228,11 @@ namespace HandGestureRecognition
 
         }
 
-        // chức năng thoát
+        /// <summary>
+        /// chức năng thoát từ thanh công cụ
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)

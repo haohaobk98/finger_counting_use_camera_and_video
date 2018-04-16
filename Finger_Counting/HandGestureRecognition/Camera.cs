@@ -56,7 +56,9 @@ namespace HandGestureRecognition
 
         }
 
-        // ham run() để bắt camera
+        /// <summary>
+        /// ham run() để bắt camera
+        /// </summary>
         private void Run()
         {
             try
@@ -71,13 +73,21 @@ namespace HandGestureRecognition
             Application.Idle += ProcessFrame;
         }
 
-        //truy cập camera
+        /// <summary>
+        /// hàm truy cập camera
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProcessFrame(object sender, EventArgs e)
         {
             imageBoxFrameGrabber.Image = grabber.QuerySmallFrame();
         }
 
-        // truy cập vào khung tham chiếu từ camera
+        /// <summary>
+        ///  hàm truy cập vào khung tham chiếu từ camera
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void FrameGrabber(object sender, EventArgs e)
         {
             currentFrame = grabber.QueryFrame();
@@ -101,7 +111,10 @@ namespace HandGestureRecognition
         // class MemStorage() để tạo bộ nhớ openCV
         MemStorage storage = new MemStorage();
 
-        // chiết xuất ra đường viền bao bọc bàn tay
+        /// <summary>
+        /// hàm chiết xuất ra đường viền bao bọc bàn tay
+        /// </summary>
+        /// <param name="skin"></param>
         private void ExtractContourAndHull(Image<Gray, byte> skin)
         {
             {
@@ -157,8 +170,10 @@ namespace HandGestureRecognition
                 }
             }
         }
-        // vẽ và đếm số lượng ngón tay
-        
+        /// <summary>
+        ///hàm vẽ và đếm số lượng ngón tay
+        /// </summary>
+
         private void DrawAndComputeFingersNum()
         {
 
@@ -225,7 +240,11 @@ namespace HandGestureRecognition
         }
 
 
-        // chức năng Exit
+        /// <summary>
+        /// chức năng thoát từ thanh công cụ
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you want to quit!", "Note", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
