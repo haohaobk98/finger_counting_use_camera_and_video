@@ -17,8 +17,7 @@ namespace HandGestureRecognition
         }
 
         /// <summary>
-        /// click vào hình ảnh video trên giao diện để chạy chương trình sử dụng video
-        /// hàm để khởi tạo chương trình chạy bằng video
+        /// Video_Click() hàm để khởi tạo chương trình chạy bằng video
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -30,8 +29,7 @@ namespace HandGestureRecognition
         }
 
         /// <summary>
-        ///  click vào hình ảnh video trên giao diện để chạy chương trình sử dụng camera
-        ///  hàm để khởi tạo chương trình chạy bằng camera
+        ///  Camera_Click () hàm để khởi tạo chương trình chạy bằng camera
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
