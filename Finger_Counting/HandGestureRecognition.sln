@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "videofile", "HandGestureRecognition\videofile.csproj", "{0A25BCF8-D49F-4909-B76D-1280054F10FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FingerCount", "HandGestureRecognition\FingerCount.csproj", "{0A25BCF8-D49F-4909-B76D-1280054F10FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandGestureRecognition.SkinDetector", "HandGestureRecognition.SkinDetector\HandGestureRecognition.SkinDetector.csproj", "{8B522B5D-7AFE-47B7-90BC-C9203374EA6D}"
 EndProject

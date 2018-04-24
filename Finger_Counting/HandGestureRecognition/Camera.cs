@@ -84,7 +84,7 @@ namespace HandGestureRecognition
         }
 
         /// <summary>
-        ///  hàm truy cập vào khung tham chiếu từ camera
+        ///  hàm truy cập vào khung tham chiếu từ camera(khung mặt na nhị phân)
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -95,7 +95,7 @@ namespace HandGestureRecognition
             {
                 currentFrameCopy = currentFrame.Copy();
 
-                // sử dụng YcrCbskinDetector để nhận diện da
+                // sử dụng class YcrCbskinDetector() để nhận diện da
                 skinDetector = new YCrCbSkinDetector();
 
                 Image<Gray, Byte> skin = skinDetector.DetectSkin(currentFrameCopy, YCrCb_min, YCrCb_max);
@@ -139,7 +139,7 @@ namespace HandGestureRecognition
 
                 if (biggestContour != null)
                 {
-                    // class ApproxPoly(Double, MemStorage) xấp xỉ 1 đường cong và trả về kết quả xấp xỉ
+                    // class ApproxPoly(Double, MemStorage) vẽ xấp xỉ 1 đường cong và trả về kết quả xấp xỉ
                     Contour<Point> currentContour = biggestContour.ApproxPoly(biggestContour.Perimeter * 0.0025, storage);
                     // dung màu xanh là cây để biểu diễn đường viền bao tay
                     currentFrame.Draw(currentContour, new Bgr(Color.LimeGreen), 2);

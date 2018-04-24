@@ -75,7 +75,7 @@ namespace HandGestureRecognition
             if (currentFrame != null)
             {
                 currentFrameCopy = currentFrame.Copy(); // có được khung ánh xạ của bàn tay
-                // sử dụng YcrCbskinDetector để nhận diện da
+                // sử dụng class YcrCbskinDetector() để nhận diện da
                 skinDetector = new YCrCbSkinDetector();
 
                 Image<Gray, Byte> skin = skinDetector.DetectSkin(currentFrameCopy, YCrCb_min, YCrCb_max);
@@ -118,7 +118,7 @@ namespace HandGestureRecognition
 
                 if (biggestContour != null)
                 {
-                    // class ApproxPoly(Double, MemStorage) xấp xỉ 1 đường cong và trả về kết quả xấp xỉ
+                    // class ApproxPoly(Double, MemStorage) vẽ xấp xỉ 1 đường cong và trả về kết quả xấp xỉ
                     Contour<Point> currentContour = biggestContour.ApproxPoly(biggestContour.Perimeter * 0.0025, storage);
                     // dung màu xanh là cây để biểu diễn đường viền bao tay
                     currentFrame.Draw(currentContour, new Bgr(Color.LimeGreen), 2);
@@ -199,19 +199,19 @@ namespace HandGestureRecognition
                         fingerNum++;
                         // vẽ đoạn màu da cam để xác định số ngón tay từ startpoint đến depthpoint
                         currentFrame.Draw(startDepthLine, new Bgr(Color.Orange), 2);                     
-                        // currentFrame.Draw(depthEndLine, new Bgr(Color.Magenta), 2);
+                        
                     }
                 
 
 
                 currentFrame.Draw(startCircle, new Bgr(Color.Red), 2); // start point biểu diễn bằng nốt màu đỏ
                 currentFrame.Draw(depthCircle, new Bgr(Color.Yellow), 5); // depthpoint biểu diễn bằng nốt màu vàng
-                                                                          // currentFrame.Draw(endCircle, new Bgr(Color.DarkBlue), 4); // endpoint biểu diễn bằng nốt màu darkblue
+                                                                          
             }
             #endregion
 
 
-            // hàm MCvFont(FONT, Double, Double) để tạo phông chữ (hiể thị số lượng ngón tay), quy mô theo chiều ngang và dọc
+            // hàm MCvFont(FONT, Double, Double) để tạo phông chữ (hiển thị số lượng ngón tay), quy mô theo chiều ngang và dọc
             MCvFont font = new MCvFont(Emgu.CV.CvEnum.FONT.CV_FONT_HERSHEY_DUPLEX, 5d, 5d);
             currentFrame.Draw(fingerNum.ToString(), ref font, new Point(50, 150), new Bgr(Color.Black));
             
