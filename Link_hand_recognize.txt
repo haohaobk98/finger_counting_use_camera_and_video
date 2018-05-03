@@ -10,3 +10,4 @@ https://github.com/zeruniverse/Gesture_Recognition/tree/master/Gesture_Recogniti
 https://drive.google.com/file/d/0B7lDtwez94H3MWZlMGQwOTUtODk2Ni00NmNmLWI3NTUtNjA4MTY2NTc5NDk0/view
 https://github.com/zeruniverse/Gesture_Recognition
 http://anikettatipamula.blogspot.ro/2012/02/hand-gesture-using-opencv.html
+https://www.youtube.com/watch?v=Fjj9gqTCTfc&t=5s
