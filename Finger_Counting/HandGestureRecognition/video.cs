@@ -98,7 +98,8 @@ namespace HandGestureRecognition
         {            
             {
                 // tìm đường viền bao bọc bàn tay
-                Contour<Point> contours = skin.FindContours(Emgu.CV.CvEnum.CHAIN_APPROX_METHOD.CV_CHAIN_APPROX_SIMPLE, Emgu.CV.CvEnum.RETR_TYPE.CV_RETR_LIST, storage);
+                Contour<Point> contours = skin.FindContours(Emgu.CV.CvEnum.CHAIN_APPROX_METHOD.CV_CHAIN_APPROX_SIMPLE,
+                    Emgu.CV.CvEnum.RETR_TYPE.CV_RETR_LIST, storage);
                 // biggest contour chính là đường biểu thị đường bao bọc bàn tay
                 Contour<Point> biggestContour = null;
                 // class contour() đê taọ đường viền, sử dụng bộ nhớ storage
@@ -142,7 +143,8 @@ namespace HandGestureRecognition
                     filteredHull = new Seq<Point>(storage);
                     for (int i = 0; i < hull.Total; i++)
                     {
-                        if (Math.Sqrt(Math.Pow(hull[i].X - hull[i + 1].X, 2) + Math.Pow(hull[i].Y - hull[i + 1].Y, 2)) > box.size.Width / 10)
+                        if (Math.Sqrt(Math.Pow(hull[i].X - hull[i + 1].X, 2) + Math.Pow(hull[i].Y - hull[i + 1].Y, 2)) 
+                            > box.size.Width / 10)
                         {
                             filteredHull.Push(hull[i]);
                         }
@@ -194,7 +196,10 @@ namespace HandGestureRecognition
                 
                 
                     // nếu đoạn nối giữa start point và end point đủ lớn thì sẽ được tính là 1 ngón tay
-                    if ((startCircle.Center.Y < box.center.Y || depthCircle.Center.Y < box.center.Y) && (startCircle.Center.Y < depthCircle.Center.Y) && (Math.Sqrt(Math.Pow(startCircle.Center.X - depthCircle.Center.X, 2) + Math.Pow(startCircle.Center.Y - depthCircle.Center.Y, 2)) > box.size.Height / 6.5))
+                    if ((startCircle.Center.Y < box.center.Y || depthCircle.Center.Y < box.center.Y) &&
+                    (startCircle.Center.Y < depthCircle.Center.Y) && 
+                    (Math.Sqrt(Math.Pow(startCircle.Center.X - depthCircle.Center.X, 2) 
+                    + Math.Pow(startCircle.Center.Y - depthCircle.Center.Y, 2)) > box.size.Height / 6.5))
                     {
                         fingerNum++;
                         // vẽ đoạn màu da cam để xác định số ngón tay từ startpoint đến depthpoint
@@ -206,7 +211,7 @@ namespace HandGestureRecognition
 
                 currentFrame.Draw(startCircle, new Bgr(Color.Red), 2); // start point biểu diễn bằng nốt màu đỏ
                 currentFrame.Draw(depthCircle, new Bgr(Color.Yellow), 5); // depthpoint biểu diễn bằng nốt màu vàng
-                                                                          
+                currentFrame.Draw(box, new Bgr(Color.YellowGreen), 2);
             }
             #endregion
 
