@@ -12,3 +12,11 @@ C:\Users\Ki Thuat 88\Source\Repos\HandGesture_Demo5\HandGestureRecognition\HandG
 C:\Users\Ki Thuat 88\Source\Repos\HandGesture_Demo5\HandGestureRecognition\HandGestureRecognition\HandGestureRecognition.SkinDetector\obj\Debug\HandGestureRecognition.SkinDetector.csproj.CoreCompileInputs.cache
 C:\Users\Ki Thuat 88\Source\Repos\HandGesture_Demo5\HandGestureRecognition\HandGestureRecognition\HandGestureRecognition.SkinDetector\obj\Debug\HandGestureRecognition.SkinDetector.dll
 C:\Users\Ki Thuat 88\Source\Repos\HandGesture_Demo5\HandGestureRecognition\HandGestureRecognition\HandGestureRecognition.SkinDetector\obj\Debug\HandGestureRecognition.SkinDetector.pdb
+C:\Users\Ki Thuat 88\Desktop\finger_counting_use_camera_and_video\Finger_Counting\HandGestureRecognition.SkinDetector\bin\Debug\HandGestureRecognition.SkinDetector.dll
+C:\Users\Ki Thuat 88\Desktop\finger_counting_use_camera_and_video\Finger_Counting\HandGestureRecognition.SkinDetector\bin\Debug\HandGestureRecognition.SkinDetector.pdb
+C:\Users\Ki Thuat 88\Desktop\finger_counting_use_camera_and_video\Finger_Counting\HandGestureRecognition.SkinDetector\bin\Debug\Emgu.CV.dll
+C:\Users\Ki Thuat 88\Desktop\finger_counting_use_camera_and_video\Finger_Counting\HandGestureRecognition.SkinDetector\bin\Debug\Emgu.Util.dll
+C:\Users\Ki Thuat 88\Desktop\finger_counting_use_camera_and_video\Finger_Counting\HandGestureRecognition.SkinDetector\obj\Debug\HandGestureRecognition.SkinDetector.csprojResolveAssemblyReference.cache
+C:\Users\Ki Thuat 88\Desktop\finger_counting_use_camera_and_video\Finger_Counting\HandGestureRecognition.SkinDetector\obj\Debug\HandGestureRecognition.SkinDetector.csproj.CoreCompileInputs.cache
+C:\Users\Ki Thuat 88\Desktop\finger_counting_use_camera_and_video\Finger_Counting\HandGestureRecognition.SkinDetector\obj\Debug\HandGestureRecognition.SkinDetector.dll
+C:\Users\Ki Thuat 88\Desktop\finger_counting_use_camera_and_video\Finger_Counting\HandGestureRecognition.SkinDetector\obj\Debug\HandGestureRecognition.SkinDetector.pdb
